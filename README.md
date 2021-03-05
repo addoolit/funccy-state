@@ -1,7 +1,7 @@
 # funccy-state
 Amazing.
 
-## \_\_main\_\_ Output:
+## call_counter.py Output:
 ```
 Hello
 Hello
