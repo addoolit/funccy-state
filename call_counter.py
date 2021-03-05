@@ -1,13 +1,11 @@
-def counting(func, state={}):
-  mykey = "THEKEYISSECRET"
-
+def counting(func, state={}, mykey="THISISASECRET"):
   def do_call(*args, _howmany=False, **kwargs):
     if func not in state:
       state[func] = 0
     if _howmany is mykey:
       return state[func]
     state[func] += 1
-    func()
+    func(*args, **kwargs)
 
   def get_count():
     return do_call(_howmany=mykey)
